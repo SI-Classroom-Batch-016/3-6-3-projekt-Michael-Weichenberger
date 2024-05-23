@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="music_app">Music App</string>
+    <string name="anmelden">Anmelden</string>
+    <string name="registrieren">Registrieren</string>
+    <string name="song_title">Song Title</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="play">Play</string>
+    <string name="zur_ck">Zurück</string>
+    <string name="_00_00">00:00</string>
+</resources>

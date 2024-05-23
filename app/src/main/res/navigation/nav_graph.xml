@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.musicapp.data.model.fragmente.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.musicapp.data.model.fragmente.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_anmeldenFragment"
+            app:destination="@id/anmeldenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anmeldenFragment"
+        android:name="com.example.musicapp.data.model.fragmente.AnmeldenFragment"
+        android:label="AnmeldenFragment"
+        tools:layout="@layout/fragment_anmelden">
+        <action
+            android:id="@+id/action_anmeldenFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.musicapp.data.model.fragmente.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>

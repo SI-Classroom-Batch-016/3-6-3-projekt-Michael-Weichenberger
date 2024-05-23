@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7C1B3"
+    tools:context=".data.model.fragmente.LoginFragment">
+
+    <ImageView
+        android:id="@+id/LogoIV"
+        android:layout_width="277dp"
+        android:layout_height="302dp"
+        android:src="@drawable/design_ohne_titel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/AppNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="@string/music_app"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <Button
+        android:id="@+id/AnmeldenBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="@string/anmelden"
+        android:textColorLink="#325440"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoIV" />
+
+    <EditText
+        android:id="@+id/EmailTV"
+        android:layout_width="229dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="132dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/AnmeldenBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoIV"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/PasswortTV"
+        android:layout_width="232dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Passwort"
+        app:layout_constraintBottom_toTopOf="@+id/AnmeldenBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailTV"
+        app:layout_constraintVertical_bias="0.494" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

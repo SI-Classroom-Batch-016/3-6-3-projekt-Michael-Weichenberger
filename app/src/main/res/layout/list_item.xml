@@ -1,0 +1,34 @@
+<!-- item_music.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="2dp"
+    android:background="#C7C1B3"
+    android:orientation="vertical"
+    android:padding="16dp"
+   >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#325440"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#8A9E75"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#0E0C0C"
+        android:textColor="#787574"
+        android:textSize="12sp" />
+
+</LinearLayout>
