@@ -11,7 +11,9 @@
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
+            app:destination="@id/detailFragment">
+
+        </action>
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -35,5 +37,16 @@
         android:id="@+id/detailFragment"
         android:name="com.example.musicapp.data.model.fragmente.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="Interpret"
+            app:argType="string" />
+        <argument
+            android:name="titel"
+            app:argType="string" />
+        <argument android:name="Dauer" />
+        <argument
+            android:name="Albumcover"
+            app:argType="reference" />
+    </fragment>
 </navigation>
