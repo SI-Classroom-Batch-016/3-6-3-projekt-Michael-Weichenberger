@@ -28,6 +28,7 @@ class DetailFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_detail, container, false)
 
+        // Referenzen auf UI-Elemente initialisieren
         songTitleTextView = view.findViewById(R.id.songTitleTextView)
         artistTextView = view.findViewById(R.id.artistTextView)
         playButton = view.findViewById(R.id.playButton)
@@ -35,18 +36,19 @@ class DetailFragment : Fragment() {
         timeTv = view.findViewById(R.id.TimeTV)
         albumArtImageView = view.findViewById(R.id.albumArtImageView)
 
-
+        // Argumente aus der Navigation extrahieren
         val songTitle = args.titel
         val artistName = args.Interpret
         val duration = args.Dauer
         val albumArt = args.Albumcover
 
-
+        // UI-Elemente mit den Argumenten aktualisieren
         songTitleTextView.text = songTitle
         artistTextView.text = artistName
         timeTv.text = duration
         albumArtImageView.setImageResource(albumArt)
 
+        // Zurück-Button-Klick-Listener konfigurieren
         backBtn.setOnClickListener {
             findNavController().navigateUp()
         }

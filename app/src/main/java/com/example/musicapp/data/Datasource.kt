@@ -1,7 +1,7 @@
 package com.example.musicapp.data
 
 import com.example.musicapp.R
-
+// Datasource in der die Daten gespeichert sind
 object Datasource {
     val data: List<Musictitle> = listOf(
         Musictitle("Apache 207", "Roller", 3.31, R.drawable.apache_theshadows),
